@@ -1,0 +1,76 @@
+@import '../../global.styles.scss';
+
+.project-card__container{
+  width: 350px;
+  padding: 20px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+  box-shadow: 0 0 15px -5px $lightBgColor;
+  //transition: all 0.5s ease;
+  cursor: default;
+  position: relative;
+  .offset{
+    position:absolute; top:-75px;
+  }
+
+  @media screen and (max-width: 400px) {
+    height: auto;
+  }
+
+  transition: all 0.1s ease;
+  &:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 15px 0px $lightBgColor;
+  }
+  text-align: center;
+
+  .project-card__img-container{
+    width: 90%;
+    height: 75px;
+    background: none;
+    border-radius: 20%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      padding: 2%;
+      width: 80%;
+      margin: 10px 0;
+    }
+
+  }
+  .project-card__name{
+    width: 100%;
+    font-size: $font-size-md-sm;
+    font-family: $highlighted;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  .project-card__employer{
+    font-size: $font-size-sm;
+    font-style: italic;
+    margin: 0 0 10px 0;
+  }
+
+  .project-card__desc{
+    text-align:justify;
+  }
+
+  .project-card__expand{
+    margin: 5px 0;
+    padding: 3px 7px;
+    border: 1px solid $lightBgColor;
+    color: $lightBgColor;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    &:hover{
+      background-color: $lightBgColor;
+      color: $darkBgColor;
+    }
+  }
+}

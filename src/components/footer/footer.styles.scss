@@ -1,0 +1,35 @@
+@import '../../global.styles.scss';
+
+.footer{
+  margin-top: 150px;
+  color: white;
+  background-color: black;
+  //position: absolute;
+  bottom: 0;
+  //height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: $font-size-md;
+  word-spacing: 10px;
+  padding: 20px;
+
+  @media screen and (max-width: 600px) {
+    font-size: $font-size-sm;
+    word-spacing: 5px;
+  }
+
+  @media screen and (max-width: 360px) {
+    word-spacing: 2px;
+    padding: 10px;
+  }
+
+  .footer_love{
+    padding: 0 20px;
+    color: red;
+    @media screen and (max-width: 600px) {
+      padding: 0 7px;
+    }
+  }
+}

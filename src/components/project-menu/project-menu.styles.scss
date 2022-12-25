@@ -1,0 +1,31 @@
+@import '../../global.styles.scss';
+
+.projects__menu{
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .projects__menu-item{
+    margin: 5px 15px;
+    font-family: $highlighted;
+    color: white;
+    font-size: $font-size-md;
+    padding: 3px 8px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    &:hover{
+      color: $lightBgColor;
+    }
+    &.active{
+      background-color: $lightBgColor;
+      color: $darkBgColor;
+      font-weight: 600;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: $font-size-sm;
+    }
+  }
+}

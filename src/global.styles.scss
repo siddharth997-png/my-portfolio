@@ -1,0 +1,58 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+$Poppins: 'Poppins', sans-serif;
+$highlighted: 'Source Code Pro', monospace;
+
+
+
+//colors
+$darkBgColor: #1B1E2F;
+$lightBgColor: #34D176;
+$primaryTextColor: white;	  
+$highlightedTextColor: #34D176; 
+$seconHighlightedTextColor: #0df1f1; 
+$secondaryTextColor:#a5b0a6;
+
+//sizing
+$navbarSize: 70px;
+$remHeight: calc(100vh - 70px);
+
+//font-sizing
+$font-size-ex-lg: 40px;
+$font-size-lg: 28px;
+$font-size-md: 24px;
+$font-size-md-sm: 20px;
+$font-size-sm: 17px;
+$font-size-ex-sm: 10px;
+
+
+//unselectable text
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $Poppins;
+}
+
+body{
+  color: $primaryTextColor;
+  overflow-x: hidden;
+  cursor: default;
+}
+
+.highlightedText{
+  color: $lightBgColor;
+}
+

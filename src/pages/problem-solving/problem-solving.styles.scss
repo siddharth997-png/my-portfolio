@@ -1,0 +1,78 @@
+@import '../../global.styles.scss';
+
+.ps{
+  position: relative;
+  height: $remHeight;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 110px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    height: auto;
+    padding: 0 40px;
+  }
+
+  .ps__content-heading{
+    font-family: $highlighted;
+    font-size: $font-size-lg;
+    color: $lightBgColor;
+    margin: 20px 0;
+  }
+
+  .ps__content{
+    letter-spacing: 0.8px;
+    margin: 10px 0;
+    font-size: $font-size-sm;
+    max-width: 1100px;
+
+    a{
+      color: $lightBgColor;
+    }
+  }
+  .ps__icon-wrapper{
+    position: absolute;
+    height: 500px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 0px;
+
+    @media screen and (max-width: 768px) {
+      position: relative;
+      flex-direction: row;
+      height: 100px;
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    a{
+      text-decoration: none;
+      background-color: white;
+      width: 55px;
+      height: 55px;
+      padding: 5px;
+      margin: 20px 0px;
+      border-radius: 50%;
+      transition:all 0.2s ease;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover{
+        width: 60px;
+        height: 60px;
+      }
+      img{
+        color: white;
+        width: 100%;
+      }
+    }
+  }
+
+}

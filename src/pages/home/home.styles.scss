@@ -1,0 +1,185 @@
+@import '../../global.styles.scss';
+@import './wave.animation.scss';
+
+
+.home{
+  padding: 30px;
+  position: relative;
+  height: $remHeight;
+  width: 80%;
+  margin: 0 auto;
+  background-color: $darkBgColor;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  overflow-x: hidden;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0 40px;
+    flex-direction: column;
+  }
+
+  .home__img-container{
+    flex: 0.5;
+    max-width: 450px;
+    height: 80%;
+    border-right: 2px solid $lightBgColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      height: 50%;
+      flex: 0.3;
+      border-right: none;
+    }
+    img{
+      width: 80%;
+      @media screen and (max-width: 768px) {
+        width: 50%;
+      }
+    }
+  } 
+
+  .home__content-wrapper{
+    margin-left: 30px;
+    position: relative;
+    flex: 0.5;
+    justify-self: flex-start;
+    //background: red;
+    max-width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    >*{
+      margin: 10px 0;
+    }
+    .content-intro {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-left: 0px;
+      width: 85%;
+      align-self: flex-start;
+      flex: 0.7;
+    }
+    
+    .content-main{
+      font-size: $font-size-lg;
+      @media screen and (max-width: 768px) {
+        font-size: $font-size-md;
+        padding: 2px;
+      }
+      .content-name{
+        font-weight: 400;
+        font-size: 40px;
+        color: $lightBgColor;
+        @media screen and (max-width: 768px) {
+          padding: 0px;
+          font-size: 30px;
+        }
+      }  
+    }
+    .content{
+      font-size: $font-size-md;
+      //margin: 30px 0px;
+      //margin-top: 20px;
+      .content-highlighted{
+        color: $lightBgColor;
+      }
+
+      .content-description{
+        font-size: $font-size-sm;
+        line-height: 1.7rem;
+      }
+
+      .experience-container{
+        font-size: $font-size-ex-sm;
+        color: $highlightedTextColor;
+        margin-top: 10px;
+        
+        h2{
+          margin: 20px 0px;
+        }
+
+        .worked-at-logo-container{
+          display: flex;
+          justify-content: space-between;
+
+          .worked-at-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:nth-child(1) {
+              img{
+                height: 70px;
+              }
+            }
+
+            &:nth-child(2) {
+              justify-self: flex-start;
+              img{
+                height: 40px;
+              }
+            }
+          }
+        }
+      }
+
+      
+      @media screen and (max-width: 768px) {
+        position: relative;
+        margin-top: 0px;
+        font-size: 1.3rem;
+      }
+      @media screen and (max-width: 400px) {
+        margin-top: 0px;
+        font-size: 1rem;
+      }
+    }
+
+    .resume{
+      //margin-top: 30px;
+      text-decoration: none;
+      color: $lightBgColor;
+      padding: 5px 10px;
+      font-size: $font-size-md;
+      border: 2px solid $lightBgColor;
+      border-radius: 10px;
+      transition: all 0.2s ease;
+
+      @media screen and (max-width: 400px) {
+        font-size: $font-size-sm;
+      }
+
+      &:hover{
+        background-color: $lightBgColor;
+        color: $darkBgColor;
+        transform: scale(1.1);
+      }
+    }
+
+    .down-arrow{
+      width: 100%;
+      //margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img{
+        width: 30px;
+        animation: blink 2s linear infinite;
+      }
+      @keyframes blink{
+        0%{opacity: 0;}
+        50%{opacity: .5;}
+        100%{opacity: 1;}
+        }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import '../../global.styles.scss';
+
+.project-info__hamburger-menu{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  //background-color: white;
+  top:30px;
+  right: 60px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+  @media screen and (max-width: 500px) {
+    height: 35px;
+    width: 35px;
+    top:30px;
+    right: 30px;
+  }
+
+  .project-info__hamburger-line{
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    //border-radius: 3px;
+    background-color: $lightBgColor;
+    &:first-child{
+      transform: rotate(45deg);
+    } 
+    &:last-child{
+      transform: rotate(-45deg);
+    }
+    @media screen and (max-width: 768px) {
+      height: 5px;
+      border-radius: 3px;
+    }
+  }
+  &:hover{
+    transform: scale(1.2);
+  }
+}
