@@ -2,7 +2,6 @@ import Fade from 'react-reveal/Fade';
 import Social from '../../components/social-icons/social.component';
 import Typewriter from "typewriter-effect";
 import GraphemeSplitter from "grapheme-splitter";
-import { Link as LinkS } from 'react-scroll';
 
 import './home.styles.scss';
 
@@ -24,26 +23,26 @@ const Home = () => {
         <div className='home__content-wrapper'>
           <p className='content-intro'>Hey <span className="wave">👋</span></p>
           <p className='content-main'>I'm <span className='content-name'>Siddharth</span>.</p>
+          <span className='typewriter-content'>
+            <Typewriter
+              options={{
+                strings: [
+                  'Software Engineer✨', 
+                  'Full Stack Developer🚀',
+                  'Cloud and Devops🌩️',
+                  'Competitive Programmer👨‍💻'
+                  ],
+                autoStart: true,
+                loop: true,
+                stringSplitter,
+                delay: 50,
+                pauseFor: 1500
+              }}
+            /> 
+          </span> 
           <p className='content'>
-            <span className='typewriter-content'>
-              <Typewriter
-                options={{
-                  strings: [
-                    'Software Engineer✨', 
-                    'Full Stack Developer🚀',
-                    'Cloud and Devops🌩️',
-                    'Competitive Programmer👨‍💻'
-                    ],
-                  autoStart: true,
-                  loop: true,
-                  stringSplitter,
-                  delay: 50,
-                  pauseFor: 1500
-                }}
-              /> 
-            </span> 
             <div className='content-description'>
-              I am a Software Engineer with a knack for building software and solving algorithmic problems. 
+              I am a Software Engineer with a knack for building highly scalable and distributed systems. 
             </div>
 
             <div className='experience-container'>
@@ -63,17 +62,7 @@ const Home = () => {
           target='_blank' 
           rel="noopener noreferrer"
           className='resume'>My Resume</a>
-          <div className='down-arrow'>
-            <LinkS
-            to='about'
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={400}
-            >
-              <img src={process.env.PUBLIC_URL+'/assets/down.svg'} alt=''/>
-            </LinkS>
-          </div>
+          
         </div>
       </Fade>
       <Social/>
