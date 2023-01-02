@@ -7,7 +7,10 @@ import {skillsArray} from './skills.data'
 const Skills = () => {
   return (
     <div className='skills'>
+      <div className='skills__header'>
         <h1 className='skills__heading'>My Skills</h1>
+        <span className='skills__description'>Here are some of the tools/frameworks I have used in the past</span>
+      </div>
         <div className='skills-card__container'>
           {
             skillsArray.map((item,index) => (
