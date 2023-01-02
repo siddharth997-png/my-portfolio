@@ -9,8 +9,8 @@ export const SkillCard = ({item}) => {
         {
             item.skills.map((skill,index) => (
                 <div className='skill-container'>
-                    <div className='skill-continer-img'>
-                        <img src={process.env.PUBLIC_URL + '/assets/'} alt=''/>
+                    <div className='skill__img-container' key={index}>
+                        <img src={process.env.PUBLIC_URL + '/assets/' + skill.skillImgSrc} alt=''/>
                     </div>
                     <p className='skill-title'>{skill.skillTitle}</p>
                 </div>

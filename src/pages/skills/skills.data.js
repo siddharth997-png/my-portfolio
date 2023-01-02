@@ -1,7 +1,7 @@
 export const skillsArray = [
     {
         id: 1,
-        parentSkillTitle: 'FrontEnd',
+        parentSkillTitle: 'Front End',
         skills: [
             {
                 id: 1,
@@ -32,48 +32,80 @@ export const skillsArray = [
     },
     {
         id: 2,
-        parentSkillTitle: 'Backend',
+        parentSkillTitle: 'Back End',
         skills: [
             {
                 id: 1,
                 skillTitle: 'C/C++',
-                skillImgSrc: ''
+                skillImgSrc: '/back-end/c++.svg'
             },
             {
                 id: 2,
                 skillTitle: 'Java',
-                skillImgSrc: ''
+                skillImgSrc: '/back-end/java.svg'
             },
             {
                 id: 3,
                 skillTitle: 'Python',
-                skillImgSrc: ''
+                skillImgSrc: '/back-end/python.svg'
             },
             {
                 id: 4,
                 skillTitle: 'PHP',
-                skillImgSrc: ''
+                skillImgSrc: '/back-end/php.svg'
             },
             {
                 id: 5,
                 skillTitle: 'Node',
-                skillImgSrc: ''
+                skillImgSrc: '/back-end/node.svg'
             },
             {
                 id: 6,
                 skillTitle: 'Laravel',
-                skillImgSrc: ''
+                skillImgSrc: '/back-end/laravel.svg'
             },
             {
                 id: 7,
                 skillTitle: 'Express',
-                skillImgSrc: ''
+                skillImgSrc: '/back-end/express.svg'
             },
             {
                 id: 8,
-                skillTitle: 'Javascript',
-                skillImgSrc: ''
+                skillTitle: 'Bash',
+                skillImgSrc: '/back-end/bash.svg'
             }
+        ]
+    },
+    {
+        id: 3,
+        parentSkillTitle: 'Databases',
+        skills: [
+            {
+                id: 1,
+                skillTitle: 'MySQL',
+                skillImgSrc: '/databases/mysql.svg'
+            },
+            {
+                id: 2,
+                skillTitle: 'PostgreSQL',
+                skillImgSrc: '/databases/postgresql.svg'
+            },
+            {
+                id: 3,
+                skillTitle: 'Mongo DB',
+                skillImgSrc: '/databases/mongodb.svg'
+            },
+            {
+                id: 4,
+                skillTitle: 'Dynamo DB',
+                skillImgSrc: '/databases/dynamodb.svg'
+            },
+            {
+                id: 4,
+                skillTitle: 'Redis',
+                skillImgSrc: '/databases/redis.svg'
+            }
+            
         ]
     }
 ]
