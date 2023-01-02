@@ -7,6 +7,8 @@ import About from './pages/about/about.component';
 import Projects from './pages/projects/projects.component';
 import Footer from './components/footer/footer.component';
 
+import Fade from 'react-reveal/Fade';
+
 function App() {
   return (
     <div className="app">
@@ -14,7 +16,9 @@ function App() {
       <div className='sections'>
         <Home/>
         <About/>
-        <Projects/>
+        <Fade>
+          <Projects/>
+        </Fade>
         <Footer/>
       </div>
     </div>
