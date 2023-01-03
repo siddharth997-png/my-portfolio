@@ -1,29 +1,29 @@
 @import './global.styles.scss';
 
-::-webkit-scrollbar {
-  width: 6px;
-  //background: none;
-}
+// ::-webkit-scrollbar {
+//   width: 6px;
+//   //background: none;
+// }
 
-::-webkit-scrollbar-track {
-  //box-shadow: inset 0 0 1px $lightBgColor; 
-  background-color: $darkBgColor;
+// ::-webkit-scrollbar-track {
+//   //box-shadow: inset 0 0 1px $lightBgColor; 
+//   background-color: $dark_bg_color;
   
-}
+// }
 
-::-webkit-scrollbar-thumb {
-  background: $lightBgColor;
-  //border-radius: 10px;
-}
+// ::-webkit-scrollbar-thumb {
+//   background: $lightBgColor;
+//   //border-radius: 10px;
+// }
 
 .app{
-  scrollbar-color: $darkBgColor;
+  scrollbar-color: $dark_bg_color;
   .sections{
     position: relative;
     width: 100%;
     //background-color: rgb(4, 85, 85);
-    background-color: $darkBgColor;
-    top: $navbarSize;
+    background-color: $dark_bg_color;
+    top: $navbar_size;
     height: auto;
   }
 }

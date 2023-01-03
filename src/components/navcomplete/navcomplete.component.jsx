@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import Navbar from "../navbar/navbar.component";
-import Sidebar from '../sidebar/sidebar.component';
+// import Sidebar from '../sidebar/sidebar.component';
 
 const NavComplete = () => {
 
@@ -10,7 +10,7 @@ const NavComplete = () => {
   return (
     <div>
       <Navbar isOpen={isOpen} toggleIsOpen={toggleIsOpen}/>
-      <Sidebar isOpen={isOpen} toggleIsOpen={toggleIsOpen}/>
+      {/* <Sidebar isOpen={isOpen} toggleIsOpen={toggleIsOpen}/> */}
     </div>
   )
 }
