@@ -2,7 +2,7 @@
 
 .about{
   position: relative;
-  height: $remHeight;
+  height: $rem_page_height;
   width: 85%;
   margin: 0 auto;
   padding: 30px;
@@ -38,7 +38,7 @@
     align-items: center;
 
     a{
-      color: $lightBgColor;
+      color: $light_bg_color;
     }
 
     .about__content-subheading{
@@ -60,7 +60,7 @@
       text-align: left;
       font-family: $highlighted;
       font-size: $font-size-ex-lg;
-      color: $lightBgColor;
+      color: $light_bg_color;
       margin-bottom: 20px;
 
       @media screen and (max-width: 900px) {

@@ -16,11 +16,11 @@
     transition: all 0.2s ease;
     cursor: pointer;
     &:hover{
-      color: $lightBgColor;
+      color: $light_bg_color;
     }
     &.active{
-      background-color: $lightBgColor;
-      color: $darkBgColor;
+      background-color: $light_bg_color;
+      color: $dark_bg_color;
       font-weight: 600;
     }
 

@@ -5,10 +5,10 @@
 .home{
   padding: 30px;
   position: relative;
-  height: $remHeight;
+  height: $rem_page_height;
   width: 80%;
   margin: 0 auto;
-  background-color: $darkBgColor;
+  background-color: $dark_bg_color;
 
   display: flex;
   justify-content: space-around;
@@ -20,7 +20,7 @@
     width: 100%;
     padding: 0 40px;
     flex-direction: column;
-    height: $remHeight;
+    height: $rem_page_height;
     padding-top: 20px;
   }
 
@@ -28,7 +28,7 @@
     flex: 0.5;
     max-width: 450px;
     height: 80%;
-    border-right: 2px solid $lightBgColor;
+    border-right: 2px solid $light_bg_color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +84,7 @@
       .content-name{
         font-weight: 400;
         font-size: 40px;
-        color: $lightBgColor;
+        color: $light_bg_color;
         @media screen and (max-width: 768px) {
           padding: 0px;
           font-size: 30px;
@@ -93,7 +93,7 @@
     }
 
     .content-highlighted, .typewriter-content{
-      color: $lightBgColor;
+      color: $light_bg_color;
       font-size: $font-size-md;
       @media screen and (max-width: 400px) {
         font-size: $font-size-sm;
@@ -115,7 +115,7 @@
 
       .experience-container{
         font-size: $font-size-ex-sm;
-        color: $highlightedTextColor;
+        color: $highlighted_text_color;
         margin: 10px 0px;
         
         h2{
@@ -168,10 +168,10 @@
     .resume{
       //margin-top: 30px;
       text-decoration: none;
-      color: $lightBgColor;
+      color: $light_bg_color;
       padding: 5px 10px;
       font-size: $font-size-md;
-      border: 2px solid $lightBgColor;
+      border: 2px solid $light_bg_color;
       border-radius: 10px;
       transition: all 0.2s ease;
 
@@ -180,8 +180,8 @@
       }
 
       &:hover{
-        background-color: $lightBgColor;
-        color: $darkBgColor;
+        background-color: $light_bg_color;
+        color: $dark_bg_color;
         transform: scale(1.1);
       }
     }

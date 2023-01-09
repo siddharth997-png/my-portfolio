@@ -46,6 +46,8 @@
       justify-content: center;
       align-items: center;
       transform: translateY(-100vh);
+      visibility: hidden;
+      opacity: 0;
       transition: 1s;
     }
     .navbar__item{
@@ -61,12 +63,18 @@
       }
       &.active{
         border-bottom: 2px solid $light_bg_color;
+        @include media("<=tablet")  {
+          border: none;
+          color: $highlighted_text_color;
+        }
       }
     }
     
   }
 
   .navbar__menu.responsive_nav{
+    visibility: visible;
+    opacity: 100;
     transition: 1s;
     transform: translateY(0);
     background-color: $dark_bg_color;
