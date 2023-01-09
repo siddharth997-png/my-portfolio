@@ -1,60 +1,78 @@
 import { Link as LinkR } from "react-scroll";
 
-import './navbar.styles.scss';
+import { BiMenuAltRight } from "react-icons/bi";
+import { AiOutlineClose } from "react-icons/ai";
 
-const Navbar = ({isOpen, toggleIsOpen}) => {
+import classes from './navbar.styles.scss';
+import { useState,useRef } from "react";
+
+const Navbar = () => {
+  const [menuOpen, toggleMenuOpen] = useState(true);
+  const navRef = useRef();
+
+  const toggleNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  }
+
+  const closeNavbar = () => {
+    navRef.current.classList.remove("responsive_nav");
+  }
+  
   return (
-    <div className={'navbar ' + (isOpen ? 'active' : '')} >
-      <LinkR
-        className='navbar__logo unselectable' 
-        to='home'
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={700}
-      >
-        {"<Siddharth Kothari/>"}
-      </LinkR>
-      <div className='navbar__menu'>
-        <LinkR className='navbar__item' 
+      <header className="header" >
+        <LinkR
+          className='header__logo unselectable' 
           to='home'
           activeClass="active"
           spy={true}
           smooth={true}
           offset={-70}
           duration={700}
-        >Home</LinkR>
-          
-        <LinkR className='navbar__item' 
-          to='about'
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={700}
-        >About</LinkR>
-          
-        <LinkR className='navbar__item' 
-          to='projects'
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={700}
-        >Projects</LinkR>
-          
-        
-      
-      </div>
-
-      <div className='hamburger-menu' onClick={()=>{toggleIsOpen(!isOpen)}}>
-        <span className='hamburger-line'></span>
-        <span className='hamburger-line'></span>
-        <span className='hamburger-line'></span>
-      </div>
-    </div>
+          onClick={closeNavbar}
+        >
+          {"<Siddharth Kothari/>"}
+        </LinkR>
+        <nav className='navbar__menu ' ref={navRef}>
+          <LinkR className='navbar__item' 
+            to='home'
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={700}
+            onClick={closeNavbar}
+          >Home</LinkR>
+            
+          <LinkR className='navbar__item' 
+            to='about'
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={700}
+            onClick={closeNavbar}
+          >About</LinkR>
+            
+          <LinkR className='navbar__item' 
+            to='projects'
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={700}
+            onClick={closeNavbar}
+          >Projects</LinkR>
+            <button className="navbar__btn navbar__btn_close" onClick={toggleNavbar}>
+              <AiOutlineClose />
+            </button>
+        </nav>
+              
+        <button className="navbar__btn" onClick={toggleNavbar}>
+          <BiMenuAltRight /> 
+        </button>
+      </header>
+     
   )
 }
 
-export default Navbar 
+export default Navbar; 
