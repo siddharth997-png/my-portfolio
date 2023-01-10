@@ -14,7 +14,7 @@ function App() {
     <div className="app">
       <Navbar/>
       <div className='sections'>
-        {/* <Home/> */}
+        <Home/>
         {/* <About/>
         <Fade>
           <Projects/>

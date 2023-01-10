@@ -30,7 +30,7 @@ const Home = () => {
                   'Software Engineer✨', 
                   'Full Stack Developer🚀',
                   'Cloud and Devops🌩️',
-                  'Competitive Programmer👨‍💻'
+                  'Competitive Programmer👨🏻‍💻'
                   ],
                 autoStart: true,
                 loop: true,
@@ -58,14 +58,19 @@ const Home = () => {
             </div>
           </p>
 
-          <a href={process.env.PUBLIC_URL + '/assets/Siddharth_Kothari_VIIT.pdf'} 
-          target='_blank' 
-          rel="noopener noreferrer"
-          className='resume'>My Resume</a>
+          <div className='social-container'>
+            <a href={process.env.PUBLIC_URL + '/assets/Siddharth_Kothari_VIIT.pdf'} 
+            target='_blank' 
+            rel="noopener noreferrer"
+            className='resume'
+            >My Resume</a>
+            <Social/>
+          </div>
+          
           
         </div>
       </Fade>
-      <Social/>
+      
     </div>
   )
 }
