@@ -3,11 +3,10 @@ import { Link as LinkR } from "react-scroll";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 
-import classes from './navbar.styles.scss';
-import { useState,useRef } from "react";
+import './navbar.styles.scss';
+import { useRef } from "react";
 
 const Navbar = () => {
-  const [menuOpen, toggleMenuOpen] = useState(true);
   const navRef = useRef();
 
   const toggleNavbar = () => {

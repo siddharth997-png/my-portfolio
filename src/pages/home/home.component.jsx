@@ -49,10 +49,14 @@ const Home = () => {
               <h2>WORKED AT</h2>
               <div className='worked-at-logo-container'>
                 <div className='worked-at-item'>
-                <img src={process.env.PUBLIC_URL + '/assets/worked-at-logos/amazon-web-services.svg'} alt=''/>
+                <a href='https://aws.amazon.com/' target='_blank' rel="noopener noreferrer">
+                  <img src={process.env.PUBLIC_URL + '/assets/worked-at-logos/amazon-web-services.svg'} alt=''/>
+                </a>
                 </div>
                 <div className='worked-at-item'>
-                <img src={process.env.PUBLIC_URL + '/assets/worked-at-logos/shiprocket.svg'} alt=''/>
+                <a href='https://www.shiprocket.in/' target='_blank' rel="noopener noreferrer">
+                  <img src={process.env.PUBLIC_URL + '/assets/worked-at-logos/shiprocket.svg'} alt=''/>
+                </a>
                 </div>
               </div>
             </div>

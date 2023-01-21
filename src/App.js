@@ -3,9 +3,9 @@ import './app.styles.scss';
 
 import Navbar from './components/navbar/navbar.component';
 import Home from './pages/home/home.component';
-// import About from './pages/about/about.component';
-// import Projects from './pages/projects/projects.component';
-// import Footer from './components/footer/footer.component';
+import About from './pages/about/about.component';
+import Projects from './pages/projects/projects.component';
+import Footer from './components/footer/footer.component';
 
 import Fade from 'react-reveal/Fade';
 
@@ -15,11 +15,11 @@ function App() {
       <Navbar/>
       <div className='sections'>
         <Home/>
-        {/* <About/>
+        <About/>
         <Fade>
           <Projects/>
         </Fade>
-        <Footer/> */}
+        <Footer/>  
       </div>
     </div>
   );

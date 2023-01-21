@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.2s ease all;
+  //transition: 0.2s ease all;
 
   .header__logo{
     
@@ -46,13 +46,11 @@
       justify-content: center;
       align-items: center;
       transform: translateY(-100vh);
-      visibility: hidden;
-      opacity: 0;
-      transition: 1s;
+      transition: 0.7s ease all;
     }
     .navbar__item{
       padding: 4px 7px;
-      transition: all 0.2s ease;
+      //transition: all 0.2s ease;
       margin: 0 15px;
       &:hover{
         transform: scale(1.05);
@@ -73,9 +71,7 @@
   }
 
   .navbar__menu.responsive_nav{
-    visibility: visible;
-    opacity: 100;
-    transition: 1s;
+    transition: 0.7s ease all;
     transform: translateY(0);
     background-color: $dark_bg_color;
 

@@ -13,9 +13,9 @@ const ProjectInfo = ({project,toggleViewProject}) => {
       <ProjectInfoHamburgerMenu 
         toggleViewProject={toggleViewProject} 
       />
-      <div className='container'>
+      <div className='project-info__container'>
         <div className='project__info-content'>
-          <span className='header'>Project</span>
+          <span className='project-header'>Project</span>
           <div className='project-name'>
             {projectTitle}
           </div>

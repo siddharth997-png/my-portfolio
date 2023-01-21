@@ -15,7 +15,6 @@ const ProjectMenu = ({selected,setSelected}) => {
             onClick={() => setSelected(id)}
             activeClass="active"
             to='projects__container'
-            spy={true}
             smooth={true}
             offset={-70}
             duration={700}

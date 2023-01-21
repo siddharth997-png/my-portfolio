@@ -11,13 +11,14 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  @media screen and (max-width: 768px) {
+
+  @include media("<=tablet") {
     height: auto;
     padding: 0 40px;
   }
 
   .ps__content-heading{
-    font-family: $highlighted;
+    font-family: $highlighted_font;
     font-size: $font-size-lg;
     color: $light_bg_color;
     margin: 20px 0;
@@ -43,7 +44,7 @@
     flex-direction: column;
     left: 0px;
 
-    @media screen and (max-width: 768px) {
+    @include media("<=tablet") {
       position: relative;
       flex-direction: row;
       height: 100px;
@@ -74,5 +75,4 @@
       }
     }
   }
-
 }

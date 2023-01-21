@@ -3,13 +3,13 @@
 .skills{
     height: auto;
     width: 85%;
-    margin: 0 auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    //margin-bottom: 0px;
-    @media screen and (max-width: 768px) {
+
+    @include media("<=tablet") {
       padding: 0 10px;
     }
     
@@ -22,20 +22,19 @@
       margin-bottom: 30px;
 
       .skills__heading{
-        font-family: $highlighted;
+        font-family: $highlighted_font;
         color: $light_bg_color;
         margin: 10px 0px;
       }
       .skills__description{
         text-align: center;
-        font-family: $highlighted;
+        font-family: $highlighted_font;
       }
 
     }
   
     .skills-card__container{
       width: 100%;
-      //background-color: rgb(3, 54, 99);
       display: flex;
       justify-content: center;
       align-items: flex-start;
