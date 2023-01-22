@@ -26,14 +26,12 @@
     flex: 0.5;
     max-width: 450px;
     height: 80%;
-    border-right: 2px solid $light_bg_color;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @include media("<=small-laptop") {
       width: 60%;
-      border: none;
     } 
     @include media("<=tablet") {
       width: 60%;

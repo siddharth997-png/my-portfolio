@@ -14,14 +14,13 @@ import {
   jsProjects 
 } from './project-data';
 
-const Projects = () => {
+const Projects = ({viewProjectInfo, toggleViewProjectInfo}) => {
 
   const [selected,setSelected] = useState('all');
   const [data,setData] = useState([]);
 
-  const [viewProject,toggleViewProject] = useState(false);
+  // const [viewProjectInfo,toggleviewProjectInfo] = useState(false);
   const [project,setProject] = useState({});
-
   useEffect(() => {
     switch(selected) {
       case 'all' : {
@@ -58,16 +57,16 @@ const Projects = () => {
             data.map((item,index) => (
               <ProjectCard key={index} 
                 item={item} 
-                toggleViewProject={toggleViewProject}
+                toggleViewProjectInfo={toggleViewProjectInfo}
                 setProject={setProject}
               />
           ))
         }
       </div>
       {
-        (viewProject ? 
+        (viewProjectInfo ? 
             <ProjectInfo 
-              toggleViewProject={toggleViewProject}
+              toggleViewProjectInfo={toggleViewProjectInfo}
               project={project}
             /> 
           : null)

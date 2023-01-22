@@ -6,7 +6,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import './navbar.styles.scss';
 import { useRef } from "react";
 
-const Navbar = () => {
+const Navbar = ({viewProjectInfo}) => {
   const navRef = useRef();
 
   const toggleNavbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
   }
   
   return (
-      <header className="header" >
+      <header className="header" style={{'display': `${viewProjectInfo ? 'none' : ''}`}}>
         <LinkR
           className='header__logo unselectable' 
           to='home'

@@ -5,19 +5,19 @@
   background-color: rgba(0,0,0, 1);
   width: 100vw;
   height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: 10000;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 100%;
 
   .project-info__container{
     margin: 20px;
     background-color: $dark_bg_color;
     padding: 20px;
     box-shadow: 0 0 15px 5px $light_bg_color;
-    //height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +69,7 @@
       }
     }
 
-    .project__info-content{
+    .project-info__content{
       flex: 0.75;
       height: 100%;
       width: 100%;

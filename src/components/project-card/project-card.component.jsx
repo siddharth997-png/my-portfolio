@@ -1,11 +1,11 @@
 import './project-card.styles.scss';
 
-const ProjectCard = ({item,toggleViewProject,setProject}) => {
+const ProjectCard = ({item,toggleViewProjectInfo,setProject}) => {
 
   const {imgSrc, projectTitle, employer, desc,id} = item;
   const handleClick = () => {
     setProject(item);
-    toggleViewProject(true);
+    toggleViewProjectInfo(true);
   }
   return (
     <div className='project-card__container' >
