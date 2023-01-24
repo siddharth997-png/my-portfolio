@@ -8,7 +8,7 @@
   justify-content: flex-start;
   align-items: center;
   margin: 30px;
-  box-shadow: 0 0 15px -5px $lightBgColor;
+  box-shadow: 0 0 15px -5px $light_bg_color;
   //transition: all 0.5s ease;
   cursor: default;
   position: relative;
@@ -16,16 +16,16 @@
   transition: all 0.1s ease;
   &:hover{
     transform: scale(1.03);
-    box-shadow: 0 0 15px 0px $lightBgColor;
+    box-shadow: 0 0 15px 0px $light_bg_color;
   }
 
   .skill-card__name{
     width: 100%;
     font-size: $font-size-md-sm;
-    font-family: $highlighted;
+    font-family: $highlighted_font;
     font-weight: 600;
     margin: 10px 0;
-    color: $lightBgColor;
+    color: $light_bg_color;
   }
 
   .skills-container{

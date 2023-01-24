@@ -9,7 +9,7 @@ const Skills = () => {
     <div className='skills'>
       <div className='skills__header'>
         <h1 className='skills__heading'>My Skills</h1>
-        <span className='skills__description'>Here are some of the tools/frameworks I have used in the past</span>
+        <span className='skills__description'>Here are some of the tools/frameworks I have worked on</span>
       </div>
         <div className='skills-card__container'>
           {

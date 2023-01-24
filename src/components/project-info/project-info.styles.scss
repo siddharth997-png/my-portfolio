@@ -5,22 +5,19 @@
   background-color: rgba(0,0,0, 1);
   width: 100vw;
   height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: 995;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: 600px) {
-    //height: auto;
-  }
+  opacity: 100%;
 
-  .container{
+  .project-info__container{
     margin: 20px;
-    background-color: $darkBgColor;
+    background-color: $dark_bg_color;
     padding: 20px;
-    box-shadow: 0 0 15px 5px $lightBgColor;
-    //height: 450px;
+    box-shadow: 0 0 15px 5px $light_bg_color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,10 +52,10 @@
           flex-wrap: wrap;
           margin-bottom: 30px;
           .tech{
-            font-family: $highlighted;
-            color: $lightBgColor;
+            font-family: $highlighted_font;
+            color: $light_bg_color;
             margin: 3px;
-            border: 1px solid $lightBgColor;
+            border: 1px solid $light_bg_color;
             padding: 3px 10px;
           }
         }
@@ -72,20 +69,20 @@
       }
     }
 
-    .project__info-content{
+    .project-info__content{
       flex: 0.75;
       height: 100%;
       width: 100%;
       @media screen and (max-width: 600px) {
         font-size: $font-size-sm;
       }
-      .header{
+      .project-header{
         @media screen and (max-width: 600px) {
-          display: none;;
+          display: none;
         }
       }
       .project-name{
-        font-family: $highlighted;
+        font-family: $highlighted_font;
         font-size: $font-size-md;
         padding-right: 20px;
         @media screen and (max-width: 600px) {
@@ -96,7 +93,7 @@
       .employer{
         font-size: $font-size-sm;
         font-style: italic;
-        font-family: $Poppins;
+        font-family: $primary_font;
         @media screen and (max-width: 600px) {
           font-size: $font-size-ex-sm;
         }
@@ -114,7 +111,7 @@
         //background-color: white;
         overflow: scroll;
         overflow-x: hidden;
-        //border: 1px solid $lightBgColor;
+        //border: 1px solid $light_bg_color;
         border-radius: 10px;
         margin-bottom: 10px;
         //box-shadow: black 0px 3px 8px;
@@ -140,13 +137,13 @@
         
         /* Track */
         &::-webkit-scrollbar-track {
-          //box-shadow: inset 0 0 1px $lightBgColor; 
+          //box-shadow: inset 0 0 1px $light_bg_color; 
           background-color: #035a27;
         }
          
         /* Handle */
         &::-webkit-scrollbar-thumb {
-          background: $lightBgColor; 
+          background: $light_bg_color; 
           border-radius: 10px;
         }
         
@@ -155,7 +152,7 @@
 
       .links{
         //margin-bottom: 20px;
-        color: $lightBgColor;
+        color: $light_bg_color;
         font-size: $font-size-md-sm;
         display: flex;
         flex-wrap: wrap;
@@ -169,16 +166,16 @@
           padding: 3px 10px;
           margin: 2px 7px;
           text-decoration: none;
-          color: $lightBgColor;
-          border: 1px solid $lightBgColor;
+          color: $light_bg_color;
+          border: 1px solid $light_bg_color;
           transition: all 0.2s ease;
           @media screen and (max-width: 600px) {
             margin: 3px;
           }
 
           &:hover{
-            background-color: $lightBgColor;
-            color: $darkBgColor;
+            background-color: $light_bg_color;
+            color: $dark_bg_color;
           }
         }
       }

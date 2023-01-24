@@ -2,7 +2,7 @@ import ProjectInfoHamburgerMenu from '../project-info-hamburger-menu/project-inf
 
 import './project-info.styles.scss';
 
-const ProjectInfo = ({project,toggleViewProject}) => {
+const ProjectInfo = ({project,toggleViewProjectInfo}) => {
   const {projectTitle, employer, mainDesc, links, techUsed,imgSrc} = project;
   const newText = mainDesc.split('<br>')
   .map ((item, i) => (
@@ -11,11 +11,11 @@ const ProjectInfo = ({project,toggleViewProject}) => {
   return (
     <div className='project-info'>
       <ProjectInfoHamburgerMenu 
-        toggleViewProject={toggleViewProject} 
+        toggleViewProjectInfo={toggleViewProjectInfo} 
       />
-      <div className='container'>
-        <div className='project__info-content'>
-          <span className='header'>Project</span>
+      <div className='project-info__container'>
+        <div className='project-info__content'>
+          <span className='project-header'>Project</span> 
           <div className='project-name'>
             {projectTitle}
           </div>

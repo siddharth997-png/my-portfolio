@@ -18,7 +18,7 @@ html, body
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  background-color: $darkBgColor;
+  background-color: $dark_bg_color;
 }
 
 .container
@@ -67,22 +67,22 @@ html, body
 		}
 	}
 	
-	&:nth-child(2):after{ background-color: $lightBgColor; }
-	&:nth-child(3):after{ background-color: $lightBgColor; }	
-	&:nth-child(4):after{ background-color: $lightBgColor; }
-	&:nth-child(5):after{ background-color: $lightBgColor; }
+	&:nth-child(2):after{ background-color: $light_bg_color; }
+	&:nth-child(3):after{ background-color: $light_bg_color; }	
+	&:nth-child(4):after{ background-color: $light_bg_color; }
+	&:nth-child(5):after{ background-color: $light_bg_color; }
 }
 
 @keyframes slide
 {
-	0% { background-color: $lightBgColor; transform: translatex(0vw); }
-	100% { background-color: $lightBgColor; transform: translatex(calc(var(--container-size) - (var(--box-size) * 1.25))); }
+	0% { background-color: $light_bg_color; transform: translatex(0vw); }
+	100% { background-color: $light_bg_color; transform: translatex(calc(var(--container-size) - (var(--box-size) * 1.25))); }
 }
 
 @keyframes color-change
 {
-	0% { background-color: $lightBgColor; }
-	100% { background-color: $lightBgColor; }
+	0% { background-color: $light_bg_color; }
+	100% { background-color: $light_bg_color; }
 }
 
 @for $i from 1 to 5 

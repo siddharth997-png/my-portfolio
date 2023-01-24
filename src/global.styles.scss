@@ -1,24 +1,26 @@
+//importing breakpoints.scss for better media query handling
+@import "./breakpoints.scss";
+
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
 
-$Poppins: 'Poppins', sans-serif;
-$highlighted: 'Source Code Pro', monospace;
+//font variables
+$primary_font: 'Poppins', sans-serif;
+$highlighted_font: 'Source Code Pro', monospace;
 
+//bg colors
+$dark_bg_color: #1B1E2F;
+$light_bg_color: #34D176;
 
-
-//colors
-$darkBgColor: #1B1E2F;
-$lightBgColor: #34D176;
-$primaryTextColor: white;	  
-$highlightedTextColor: #34D176; 
-$seconHighlightedTextColor: #0df1f1; 
-$secondaryTextColor:#a5b0a6;
+//text colors
+$primary_text_color: white;	  
+$highlighted_text_color: #34D176; 
 
 //sizing
-$navbarSize: 70px;
-$remHeight: calc(100vh - 70px);
+$navbar_size: 70px;
+$rem_page_height: calc(100vh - 70px);
 
 //font-sizing
 $font-size-ex-lg: 40px;
@@ -26,8 +28,7 @@ $font-size-lg: 28px;
 $font-size-md: 24px;
 $font-size-md-sm: 20px;
 $font-size-sm: 17px;
-$font-size-ex-sm: 10px;
-
+$font-size-ex-sm: 13px;
 
 //unselectable text
 .unselectable {
@@ -43,16 +44,19 @@ $font-size-ex-sm: 10px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: $Poppins;
+  font-family: $primary_font;
 }
 
 body{
-  color: $primaryTextColor;
+  color: $primary_text_color;
   overflow-x: hidden;
   cursor: default;
 }
 
-.highlightedText{
-  color: $lightBgColor;
+button{
+  cursor: pointer;
+  color: $primary_text_color;
 }
+
+
 

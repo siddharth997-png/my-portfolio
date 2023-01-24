@@ -9,18 +9,18 @@
 
   .projects__menu-item{
     margin: 5px 15px;
-    font-family: $highlighted;
+    font-family: $highlighted_font;
     color: white;
     font-size: $font-size-md;
     padding: 3px 8px;
     transition: all 0.2s ease;
     cursor: pointer;
     &:hover{
-      color: $lightBgColor;
+      color: $light_bg_color;
     }
     &.active{
-      background-color: $lightBgColor;
-      color: $darkBgColor;
+      background-color: $light_bg_color;
+      color: $dark_bg_color;
       font-weight: 600;
     }
 

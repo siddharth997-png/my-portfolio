@@ -1,7 +1,7 @@
 @import '../../global.styles.scss';
 
 .projects{
-  //height: $remHeight;
+  //height: $rem_page_height;
   height: auto;
   width: 85%;
   margin: 0 auto;
@@ -18,8 +18,8 @@
   
 
   .projects__heading{
-    font-family: $highlighted;
-    color: $lightBgColor;
+    font-family: $highlighted_font;
+    color: $light_bg_color;
     margin: 10px 0px;
   }
 

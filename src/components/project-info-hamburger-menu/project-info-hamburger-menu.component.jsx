@@ -1,9 +1,9 @@
 import './project-info-hamburger-menu.styles.scss';
 
-const ProjectInfoHamburgerMenu = ({toggleViewProject}) => {
+const ProjectInfoHamburgerMenu = ({toggleViewProjectInfo}) => {
   return (
     <div className='project-info__hamburger-menu'
-        onClick={() => toggleViewProject(false)}
+        onClick={() => toggleViewProjectInfo(false)}
       >
         <span className='project-info__hamburger-line'></span>
         <span className='project-info__hamburger-line'></span>
