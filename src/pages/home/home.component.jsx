@@ -55,8 +55,9 @@ const Home = () => {
                 </a>
                 </div>
                 <div className='worked-at-item'>
-                  
-                <img src={process.env.PUBLIC_URL + '/assets/worked-at-logos/shiprocket.svg'} alt=''/>
+                <a href='https://www.shiprocket.in/' target='_blank' rel="noopener noreferrer">
+                  <img src={process.env.PUBLIC_URL + '/assets/worked-at-logos/shiprocket.svg'} alt=''/>
+                </a>
                 </div>
               </div>
             </div>
