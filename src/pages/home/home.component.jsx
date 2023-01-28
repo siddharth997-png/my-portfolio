@@ -30,7 +30,8 @@ const Home = () => {
                   'Software Engineer✨', 
                   'Full Stack Developer🚀',
                   'Cloud and Devops🌩️',
-                  'Competitive Programmer👨🏻‍💻'
+                  'Competitive Programmer👨🏻‍💻',
+                  'Fitness Enthusiast🏋🏻'
                   ],
                 autoStart: true,
                 loop: true,
@@ -54,16 +55,15 @@ const Home = () => {
                 </a>
                 </div>
                 <div className='worked-at-item'>
-                <a href='https://www.shiprocket.in/' target='_blank' rel="noopener noreferrer">
-                  <img src={process.env.PUBLIC_URL + '/assets/worked-at-logos/shiprocket.svg'} alt=''/>
-                </a>
+                  
+                <img src={process.env.PUBLIC_URL + '/assets/worked-at-logos/shiprocket.svg'} alt=''/>
                 </div>
               </div>
             </div>
           </p>
 
           <div className='social-container'>
-            <a href={process.env.PUBLIC_URL + '/assets/Siddharth_Kothari_VIIT.pdf'} 
+            <a href={process.env.PUBLIC_URL + '/assets/Siddharth_Kothari_Resume.pdf'} 
             target='_blank' 
             rel="noopener noreferrer"
             className='resume'
