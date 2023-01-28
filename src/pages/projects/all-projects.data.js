@@ -45,11 +45,6 @@ export const crwnClothing = {
       id:1,
       title: 'Github',
       src: 'https://github.com/siddharth997-png/crwn-clothing'
-    },
-    {
-      id:1,
-      title: 'Live Website',
-      src: 'https://crwn-977.herokuapp.com'
     }
   ],
   techUsed : [
@@ -101,11 +96,6 @@ export const chapApp = {
       id:1,
       title: 'Github',
       src: 'https://github.com/siddharth997-png/chat-app'
-    },
-    {
-      id:2,
-      title: 'Live Website',
-      src: 'https://siddharth997-node-chat-app.herokuapp.com/'
     }
   ],
   techUsed : [

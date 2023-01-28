@@ -30,7 +30,8 @@ const Home = () => {
                   'Software Engineer✨', 
                   'Full Stack Developer🚀',
                   'Cloud and Devops🌩️',
-                  'Competitive Programmer👨🏻‍💻'
+                  'Competitive Programmer👨🏻‍💻',
+                  'Fitness Enthusiast🏋🏻'
                   ],
                 autoStart: true,
                 loop: true,
@@ -63,7 +64,7 @@ const Home = () => {
           </p>
 
           <div className='social-container'>
-            <a href={process.env.PUBLIC_URL + '/assets/Siddharth_Kothari_VIIT.pdf'} 
+            <a href={process.env.PUBLIC_URL + '/assets/Siddharth_Kothari_Resume.pdf'} 
             target='_blank' 
             rel="noopener noreferrer"
             className='resume'
