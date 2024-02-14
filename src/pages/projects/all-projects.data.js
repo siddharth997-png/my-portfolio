@@ -85,7 +85,7 @@ export const msaProject = {
     `This web application helps identify, catalog, calibrate and study the measurement certainty of inspection, testing, and lab equipment.<br>It basically verifies the accuracy and precision of a measurement system. <br>This application has two actors, Admin and Instructor. The admin has the ability to sign up different instructors. <br>Measurement System Analysis : The admin enters various details about a particular instrument. Then he selects 3 different Instructors. Then each instructor is supposed to measure the 10 similar instruments in 3 trials. This brings the total number of inputs to 90. All this data then undergoes various calculations and computations. A report is generated based on the result which basically says whether the instructors are fit for measurement of instruments or not. And if not, what they did wrong and what all they need to work on. These reports are stored in a database which can accessed by the admin whenever they want.<br>Since this application is hosted on the company's private servers, I can't post the link for the live website. You can check out the demo video to see what the project is about.`
 };
 
-export const chapApp = {
+export const chatApp = {
   id: 4,
   imgSrc: '/assets/chat.svg',
   projectTitle: 'Real Time Chat Application',

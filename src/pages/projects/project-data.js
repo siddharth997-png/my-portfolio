@@ -2,7 +2,7 @@ import {
   aakarProject, 
   crwnClothing,
   msaProject,
-  chapApp,
+  chatApp,
   ticTacToe
 } from "./all-projects.data";
 
@@ -10,7 +10,7 @@ export const allProjectsData = [
   aakarProject,
   crwnClothing,
   msaProject,
-  chapApp
+  chatApp
 ];
 
 export const reactProjects = [
@@ -18,7 +18,7 @@ export const reactProjects = [
 ];
 
 export const nodeProjects = [
-  chapApp
+  chatApp
 ];
 
 export const phpProjects = [
